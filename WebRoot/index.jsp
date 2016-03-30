@@ -34,6 +34,32 @@
 <script type="text/javascript" src="js/index.js"></script>
 </head>
 <body>
-	<div id="arcgisDiv"></div>
+<div id="content"
+     data-dojo-type="dijit/layout/BorderContainer"
+     data-dojo-props="design:'headline', gutters:true"
+     style="width: 100%; height: 100%; margin: 0;">
+
+  <div id="rightPane"
+       data-dojo-type="dijit/layout/ContentPane"
+       data-dojo-props="region:'right'">
+
+    <div data-dojo-type="dijit/layout/AccordionContainer">
+      <div data-dojo-type="dijit/layout/ContentPane" id="legendPane"
+           data-dojo-props="title:'Legend', selected:true">
+        <div id="legendDiv"></div>
+      </div>
+      <div data-dojo-type="dijit/layout/ContentPane"
+           data-dojo-props="title:'Pane 2'">
+        This pane could contain tools or additional content
+      </div>
+    </div>
+  </div>
+  <div id="arcgisDiv"
+       data-dojo-type="dijit/layout/ContentPane"
+       data-dojo-props="region:'center'"
+       style="overflow:hidden;">
+  </div>
+</div>
+<!-- 	<div id="arcgisDiv"></div> -->
 </body>
 </html>
