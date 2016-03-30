@@ -54,12 +54,13 @@
       </div>
     </div>
   </div>
+  
   <div id="arcgisDiv"
        data-dojo-type="dijit/layout/ContentPane"
        data-dojo-props="region:'center'"
        style="overflow:hidden;">
   </div>
 </div>
-<!-- 	<div id="arcgisDiv"></div> -->
+<!--   <div id="arcgisDiv"></div> -->
 </body>
 </html>
